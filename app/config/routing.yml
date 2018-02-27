@@ -1,0 +1,21 @@
+app_category:
+    resource: "@AppBundle/Resources/config/routing/category.yml"
+    prefix:   /category
+
+app_tag:
+    resource: "@AppBundle/Controller/TagController.php"
+    type:     annotation
+
+login:
+    path: /login
+    defaults: { _controller: AppBundle:User:login}
+    
+login_check:
+    path: /login_check
+    
+logout:
+    path: /logout
+
+blog_homepage:
+    path: /
+    defaults: { _controller: AppBundle:Default:index}

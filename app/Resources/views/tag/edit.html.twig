@@ -1,0 +1,18 @@
+{% extends "Layout.html.twig"%}
+
+{% block content %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2>Editar Etiquetas</h2>
+                <div class="form-group">
+                {{ form_start(edit_form) }}
+                {{ form_widget(edit_form) }}
+                </div>
+                <input type="submit" name="Guardar" value="Guardar" class="btn btn-primary" />
+                <a class="btn btn-danger" href="{{ path('tag_index') }}">Regresar</a>
+                {{ form_end(edit_form) }}
+            </div>
+        </div>
+    </div>
+{% endblock %}
